@@ -8,21 +8,21 @@ var config = {
 
 artyom.initialize(config);
 
-// var saudacao = [
-//   "Bom dia", "Boa tarde", "Boa Noite", "Olá", "olá", "ola", "oi", "ooie", "Oi", "Oiie", "E aí", "e aí", "E aí, beleza", "Beleza", "beleza"
-// ]
+var saudacao = [
+  "Bom dia", "Boa tarde", "Boa Noite", "Olá", "olá", "ola", "oi", "ooie", "Oi", "Oiie", "E aí", "e aí", "E aí, beleza", "Beleza", "beleza"
+]
 
 
-// artyom.say("Seja Bem vindo ao site Developer Circles de Santa Rita do Sapucaí");
-// artyom.say("Me chame se precisar de algo, meu nome é Lisa", {
-//   onStart:function(){
-//     artyom.fatality();
-//     artyom.dontObey();
-//   },
-//   onEnd:function(){
-//     artyom.initialize(config);
-//   }
-// });
+artyom.say("Seja Bem vindo ao site Developer Circles de Santa Rita do Sapucaí");
+artyom.say("Me chame se precisar de algo, meu nome é Lisa", {
+  onStart:function(){
+    artyom.fatality();
+    artyom.dontObey();
+  },
+  onEnd:function(){
+    artyom.initialize(config);
+  }
+});
 var funcSaudacao = {
   indexes: ['lisa', 'hey, lisa', 'ola, lisa'],
   action: function(){
@@ -43,17 +43,17 @@ var funcSaudacao = {
 var openSorteador = {
   indexes: ['abrir sorteador', 'Abrir Sorteador', 'sorteador'],
   action: function(){
-    // artyom.say("Abrindo sorteador", {
-    //   onStart:function(){
-    //     artyom.fatality();
-    //     artyom.dontObey();
-    //   },
-    //   onEnd:function(){
-    //     artyom.initialize(config);
-    //   }
-    // });
+    artyom.say("Abrindo sorteador", {
+      onStart:function(){
+        artyom.fatality();
+        artyom.dontObey();
+      },
+      onEnd:function(){
+        artyom.initialize(config);
+      }
+    });
     document.getElementById("sorteio").click();
-    // artyom.say("Fale exemplo: 'Minimo recebe 10' para atribuir o valor minimo");
+    artyom.say("Fale exemplo: 'Minimo recebe 10' para atribuir o valor minimo");
   }
 }
 
@@ -68,7 +68,7 @@ var closeSorteador = {
 var gerarNumero = {
   indexes: ['Gerar', 'gerar', 'sortear', 'Sortear'],
   action: function(){
-    // artyom.say("Sorteando");
+    artyom.say("Sorteando");
     document.getElementById("gerador").click();
   }
 }
