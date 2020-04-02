@@ -1,0 +1,7 @@
+
+
+canvas{ border: 5px solid #000; float:left; margin-right:10px; width: 100%; height: 80vh}
+div.legenda h1{margin-bottom:5px; color: #A744FF; font-size: 24px; padding-left: 5px; padding-top: 4px; float: left;}
+div.legenda p {float: left; margin-left: 20px; margin-top: 7px;}
+div#box_score{ position: absolute; z-index: 2; right: 5px; top: 2px;}
+div#box_score h1 {font-size: 18px; margin-top: 15px; margin-right: 10px;}
