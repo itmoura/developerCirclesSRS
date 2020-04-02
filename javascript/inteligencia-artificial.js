@@ -60,7 +60,7 @@ var openSorteador = {
 var closeSorteador = {
   indexes: ['fechar sorteador', 'Fechar Sorteador'],
   action: function(){
-    artyom.say("Fechando sorteador");
+//     artyom.say("Fechando sorteador");
     document.getElementById("fecharSorteador").click();
   }
 }
